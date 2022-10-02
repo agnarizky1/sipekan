@@ -128,6 +128,7 @@ class Pesanan extends CI_Controller
         );
 
         if ($this->form_validation->run() == FALSE) {
+			$data['user] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
             $data['title'] = 'Form Edit Pesanan';
             $data['pesanan'] = $this->M_pesanan->get_data($id_pesanan);
             $data['kendaraan'] = $this->db->get('kendaraan')->result();
