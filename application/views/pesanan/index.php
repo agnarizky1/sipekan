@@ -109,6 +109,7 @@
                     </div>
 
                     <div class="card-body">
+						 <div class="table-responsive p-0">
                         <div class="tab-content" id="custom-tabs-four-tabContent">
                             <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                                 <table class="table table-bordered">
@@ -181,14 +182,15 @@
                             </div>
                         </div>
                     </div>
-                <?php } else { ?>
+                
 
-                <?php } ?>
-                <!-- /.card -->
+                
+               </div>
                 </div>
         </div>
     </div>
 </div>
+	<?php } ?>
 
 
 <!-- Modal Hapus Kendaraan -->
